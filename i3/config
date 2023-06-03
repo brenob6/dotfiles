@@ -1,0 +1,61 @@
+# set key super as mod
+set $mod mod4
+font pango:Hack Regular Nerd Font 8
+
+
+exec --no-startup-id dex --autostart --environment i3
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id nm-applet
+
+# Wallpaper
+exec_always feh --bg-fill /home/breno/Pictures/wallpapers/wallpaper04.png
+
+# Composer 
+exec_always picom --experimental-backends
+
+# Touchpad configuration
+exec_always xinput -set-prop 11 294 1
+exec_always xinput -set-prop 11 302 1
+exec_always pkill polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+floating_modifier $mod
+
+# Worksapaces names
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# Bind
+
+bindsym $mod+q kill
+
+bindsym $mod+t split toggle
+bindsym $mod+f fullscreen toggle
+
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# reload the configuration file
+bindsym $mod+Shift+r restart
+
+include $HOME/.config/i3/variables.conf
+include $HOME/.config/i3/settings.conf
+include $HOME/.config/i3/keybinds.conf
+include $HOME/.config/i3/theme.conf
