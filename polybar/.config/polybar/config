@@ -1,8 +1,10 @@
 [colors]
-background = #000000
-foreground = #dfdfdf
-red = #590000
-gray = #505050
+background = #000
+foreground = #fff
+red = #f00
+gray = #222
+black = #000
+white = #fff
 
 [bar/bar1]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -40,16 +42,13 @@ tray-position = right
 tray-padding = 2
 ;tray-background = #0063ff
 
-;wm-restack = bspwm
-;wm-restack = i3
+wm-restack = i3
 
 ;override-redirect = true
 
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
 
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -115,23 +114,7 @@ ramp-3 = 󱩔
 ramp-4 = 󱩕
 ramp-5 = 󰛨
 
-enable-scroll = true
-
-[module/cpu]
-type = internal/cpu
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #f90000
-label = %percentage:2%%
-
-[module/memory]
-type = internal/memory
-interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
-label = %percentage_used%%
+enable-scroll = false
 
 [module/network]
 type = internal/network
@@ -161,12 +144,11 @@ ramp-signal-foreground = ${colors.foreground}
 type = internal/date
 interval = 5
 
-date = %d/%m/%Y
-date-alt = " %Y-%m-%d"
-time = %H:%M
-time-alt = %H:%M:%S
+date =  %d %B
+time =  %H:%M
+ 
 
-label = %time% %date% 
+label =  %time% %date% 
 
 [module/pulseaudio-control-input]
 type = custom/script
@@ -189,7 +171,7 @@ label-volume =  %percentage%%
 label-volume-foreground = ${colors.foreground}
 
 label-muted =  %percentage%%
-label-muted-foreground = ${colors.foreground}
+label-muted-foreground = ${colors.black}
 label-muted-background = ${colors.red}
 
 [module/battery]
