@@ -1,6 +1,7 @@
 [colors]
 background = #000
 foreground = #fff
+
 red = #f00
 gray = #222
 black = #000
@@ -20,12 +21,6 @@ fixed-center = false
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 3
-line-color = #f00
-
-border-bottom-size = 1
-border-color = #000000
-
 padding-left = 2
 padding-right = 2
 
@@ -40,7 +35,7 @@ modules-right = backlight pulseaudio battery
 
 tray-position = right
 tray-padding = 2
-;tray-background = #0063ff
+tray-background = black
 
 wm-restack = i3
 
@@ -58,6 +53,7 @@ type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
+pin-workspaces = true
 
 ws-icon-0 = 1;
 ws-icon-1 = 2;
@@ -171,8 +167,8 @@ label-volume =  %percentage%%
 label-volume-foreground = ${colors.foreground}
 
 label-muted =  %percentage%%
-label-muted-foreground = ${colors.black}
-label-muted-background = ${colors.red}
+label-muted-foreground = ${colors.white}
+label-muted-background = ${colors.gray}
 
 [module/battery]
 type = internal/battery

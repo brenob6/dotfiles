@@ -11,7 +11,6 @@ exec --no-startup-id nm-applet
 exec_always feh --bg-fill /home/breno/Pictures/wallpapers/wallpaper04.png
 
 # Composer 
-exec_always picom --experimental-backends
 
 # Touchpad configuration
 exec_always xinput -set-prop 11 294 1
@@ -31,7 +30,6 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
-
 # Bind
 
 bindsym $mod+q kill
