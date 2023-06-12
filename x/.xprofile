@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Enviroments variables
+export TERMINAL="alacritty"
+export EDITOR="nvim"
+export BROWSER="BRAVE"
