@@ -1,0 +1,24 @@
+[font.normal]
+family = "HackNerdFont"
+style = "Regular"
+
+[font.italic]
+family = "HackNerdFont"
+style = "Italic"
+
+[font.bold]
+family = "HackNerdFont"
+style="Bold"
+
+[colors.primary]
+foreground = "#ffffff"
+background="#000000"
+
+[colors.normal]
+black = "#000000"
+red = "#ff1111"
+yellow = "#ffc600"
+blue = "#39bae6"
+white = "#ffffff"
+green = "#0aff0a"
+
