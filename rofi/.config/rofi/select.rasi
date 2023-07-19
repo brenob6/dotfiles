@@ -1,0 +1,43 @@
+@theme "./theme"
+
+window {
+    location: center;
+    width: 50%;
+		background-color: black;
+    padding: 5px;
+		border: 1px;
+}
+
+mainbox { 
+	children: [listview];
+}
+
+
+listview {
+		lines: 1;
+    columns: 3;
+    spacing: 1em;
+    fixed-columns: true;
+}
+
+element {
+    orientation: horizontal;
+		padding: 1px;
+    cursor: pointer;
+		border: 1px;
+		children: [element-text];
+		border-color: @white;
+}
+
+element selected {
+	border-color: @green;
+}
+
+element-text {
+    horizontal-align: 0.5;
+}
+
+element-text selected{
+		color: @green;
+    cursor: inherit;
+}
