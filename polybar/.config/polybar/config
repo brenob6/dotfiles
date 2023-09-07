@@ -2,8 +2,8 @@
 background = #000
 foreground = #fff
 
-red = #f00
-gray = #222
+red = #ff3333
+gray = #737d87
 black = #000
 white = #fff
 
@@ -17,6 +17,7 @@ height = 20
 padding = 5
 radius = 0
 fixed-center = false
+bottom = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
