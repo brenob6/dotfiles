@@ -113,30 +113,6 @@ ramp-5 = 󰛨
 
 enable-scroll = false
 
-[module/network]
-type = internal/network
-
-;run "ip link" to see your interface
-interface = wlp2s0
-interval = 3.0
-
-format-connected = <ramp-signal> <label-connected>
-label-connected = %essid%
-
-format-disconnected = <label-disconnected>
-label-disconnected = 󰤮 %essid%
-
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
-
-ramp-signal-4 = 󰤨
-ramp-signal-3 = 󰤥
-ramp-signal-2 = 󰤢
-ramp-signal-1 = 󰤟
-ramp-signal-0 = 󰤯
-ramp-signal-foreground = ${colors.foreground}
-
 [module/date]
 type = internal/date
 interval = 5
@@ -147,20 +123,10 @@ time =  %H:%M
 
 label =  %time% %date% 
 
-[module/pulseaudio-control-input]
-type = custom/script
-tail = true
-interval = 5
-label-padding = 2
-label-foreground = ${colors.foreground}
-
-exec = pulseaudio-control --node-type input listen
-
-
 [module/pulseaudio]
 type = internal/pulseaudio
 
-use-ui-max = false
+use-ui-max = true
 
 format-volume = <label-volume>
 
@@ -170,6 +136,8 @@ label-volume-foreground = ${colors.foreground}
 label-muted =  %percentage%%
 label-muted-foreground = ${colors.white}
 label-muted-background = ${colors.gray}
+
+click-right = pavucontrol
 
 [module/battery]
 type = internal/battery
