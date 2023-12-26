@@ -3,4 +3,16 @@
 # Enviroments variables
 export TERMINAL="alacritty"
 export EDITOR="nvim"
-export BROWSER="BRAVE"
+export BROWSER="firefox"
+
+# Set touchpad config
+xinput -set-prop 10 294 1
+xinput -set-prop 10 286 1  
+xinput -set-prop 10 292 1
+xinput -set-prop 10 300 1
+
+# Wallpaper
+feh --bg-fill --randomize ~/Pictures/wallpapers/* &
+
+# Composer
+picom -b
