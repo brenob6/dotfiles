@@ -24,7 +24,4 @@ alias vi="nvim"
 alias vimrc="cd ~/.config/nvim"
 alias sv="source venv/bin/activate"
 
-# Load Angular CLI autocompletion.
-source <(ng completion script)
-
 source $ZSH/oh-my-zsh.sh
