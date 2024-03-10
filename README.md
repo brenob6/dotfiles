@@ -1,18 +1,8 @@
-# Matchfiles
+# Dotfiles
 
-## Instaling
+## Install
 
-Required GNU `stow`
+[Stow](https://www.gnu.org/software/stow/) are required to use the `install.sh` script.
 
-Clone in your `$HOME` directory and use `stow something` to symlink in your `~/.config`.
-
-```
-stow i3 
-```
-
-## Programs
-
-- **Z SHELL**   
-- **i3** 4.22 or > is required
-- **Polybar**
-- **Rofi**
+The script will use `stow` to symlink the configs in `home` and `.config` directory.
+Will also copy some config files in `etc` directory.
