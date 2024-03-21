@@ -57,8 +57,8 @@ cursor-scroll = ns-resize
 ;click-left = $HOME/script/kb-layout.sh toggle
 
 type = custom/ipc
-hook-0 = $HOME/script/kb-layout.sh
-hook-1 = "$HOME/script/kb-layout.sh toggle"
+hook-0 = $HOME/.script/kb-layout.sh
+hook-1 = "$HOME/.script/kb-layout.sh toggle"
 format = <label>
 format-1 = <label>
 label = %output%
