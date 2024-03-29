@@ -1,9 +1,10 @@
 [colors]
-background = #000
-foreground = #fff
+background = #313244
+foreground = #ede6e6
+base = #1e1e2e
 
-red = #ff1111
-gray = #737d87
+danger = #f38ba8
+overlay = #6c7086
 black = #000
 white = #fff
 
@@ -15,9 +16,6 @@ height = 20
 ;offset-x = 1%
 ;offset-y = 1%
 
-padding = 5
-radius = 0
-fixed-center = false
 bottom = true
 
 background = ${colors.background}
@@ -91,7 +89,7 @@ label-mode-background = ${colors.foreground}
 
 ; focused = Active workspace on focused monitor
 label-focused =%index%
-label-focused-background = ${colors.gray}
+label-focused-background = ${colors.overlay}
 label-focused-padding = 1
 
 ; unfocused = Inactive workspace on any monitor
@@ -106,7 +104,8 @@ label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
 label-urgent = %index%
-label-urgent-background = ${colors.red}
+label-urgent-background = ${colors.danger}
+label-urgent-foreground = ${colors.base}
 label-urgent-padding = 1
 
 
@@ -150,8 +149,7 @@ label-volume =  %percentage%%
 label-volume-foreground = ${colors.foreground}
 
 label-muted =  %percentage%%
-label-muted-foreground = ${colors.white}
-label-muted-background = ${colors.gray}
+label-muted-foreground = ${colors.danger}
 
 click-right = pavucontrol
 
@@ -168,7 +166,7 @@ label-charging = 󰂄%percentage%%
 label-discharging = %percentage%%
 label-full = 󰁹%percentage%%
 label-low = 󱃍%percentage%%
-label-low-background = ${colors.red}
+label-low-background = ${colors.danger}
 
 ramp-capacity-4 = 󰂂
 ramp-capacity-3 = 󰂀
