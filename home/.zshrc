@@ -5,10 +5,11 @@ export ZSH_AUTOSUGGEST_STRATEGY=(history)
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:/usr/local/bin
 
-ZSH_THEME="murilasso"
-zle_highlight=('paste:none')
+export OS="linux"
 
 HYPHEN_INSENSITIVE="true"
+
+ZSH_THEME="robbyrussell"
 
 plugins=(
 	git
@@ -17,11 +18,15 @@ plugins=(
 	asdf
 	zsh-autosuggestions
 	extract
-	vi-mode
+	zsh-syntax-highlighting
 )
 
 alias vi="nvim"
 alias vimrc="cd ~/.config/nvim"
+alias wo="cd ~/workspace"
 alias sv="source venv/bin/activate"
+
+alias idf="idf.py"
+alias get_idf='. $HOME/workspace/esp/esp-idf/export.sh'
 
 source $ZSH/oh-my-zsh.sh

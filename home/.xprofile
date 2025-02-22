@@ -6,8 +6,9 @@ export EDITOR="nvim"
 export BROWSER="firefox"
 
 # Wallpaper
-feh --bg-fill --randomize ~/Pictures/wallpapers/* &
+feh --bg-fill ~/Pictures/wallpapers/arch-black-4k.png &
+~/.screenlayout/layout.sh &
 
 # Composer
 picom -b -f
-
+flameshot &
