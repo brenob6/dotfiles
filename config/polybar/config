@@ -1,12 +1,11 @@
 [colors]
-background = #313244
-foreground = #ede6e6
+background = #16181a
+foreground = #ffffff
 base = #1e1e2e
 
-danger = #f38ba8
+danger = #ff6e5e
 overlay = #6c7086
 black = #000
-white = #fff
 
 [bar/bar1]
 enable-ipc = true

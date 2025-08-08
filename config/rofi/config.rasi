@@ -25,7 +25,7 @@ window {
     border-color: @border-col;
     background-color: @bg-col;
 		location: east;
-		xoffset: -30%;
+    margin: 0px 20px 0px 0px;
 }
 
 mainbox {

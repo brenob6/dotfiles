@@ -4,6 +4,10 @@ export ZSH_AUTOSUGGEST_STRATEGY=(history)
 
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:$IDF_PATH/tools
+
+# besu
+export PATH=$PATH:$HOME/besu-25.6.0/bin
 
 export OS="linux"
 
@@ -21,12 +25,19 @@ plugins=(
 	zsh-syntax-highlighting
 )
 
+## asdf
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+# append completions to fpath
+fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
+
 alias vi="nvim"
 alias vimrc="cd ~/.config/nvim"
 alias wo="cd ~/workspace"
 alias sv="source venv/bin/activate"
 
 alias idf="idf.py"
-alias get_idf='. $HOME/workspace/esp/esp-idf/export.sh'
+alias get_idf='. $HOME/esp/esp-idf/export.sh'
 
 source $ZSH/oh-my-zsh.sh
