@@ -32,7 +32,7 @@ else
     # Apenas um wallpaper para o único monitor
     img_unico="$HOME/Pictures/wallpapers/wallpaper2"
     feh --no-fehbg --bg-fill "$img_unico"
-		start_polybar "$m"
+		start_polybar "${monitores[0]}"
 
 fi
 

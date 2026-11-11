@@ -24,7 +24,7 @@ plugins=(
 	extract
 )
 
-## asdf\
+## asdf
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 # append completions to fpath
 fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
@@ -45,4 +45,4 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.pl
 
 
 # Added by Antigravity CLI installer
-export PATH="/home/breno/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
