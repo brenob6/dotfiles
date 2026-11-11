@@ -6,15 +6,11 @@ layout () {
 	echo $(setxkbmap -print -verbose 10 | grep layout | awk '{print $2}')
 } 
 
-
-if [ $# -eq 1 ]
+if [ $(layout) == $DEFAULT ] 
 then
-	if [ $(layout) == $DEFAULT ] 
-	then
-		setxkbmap us
-	else
-		setxkbmap br
-	fi
+	setxkbmap us
+	notify-send "Layout: us"
+else
+	setxkbmap br
+	notify-send "Layout: br"
 fi
-
-echo $(layout)
