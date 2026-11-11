@@ -1,17 +1,17 @@
 [colors]
-background = #16181a
-foreground = #ffffff
-base = #1e1e2e
-
-danger = #ff6e5e
-overlay = #6c7086
-black = #000
+background = #002b36
+foreground = #93a1a1
+base = #073642
+danger = #dc322f
+overlay = #073642
+accent = #268bd2
+black = #073642
 
 [bar/bar1]
 enable-ipc = true
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:}
 width = 100%
-height = 20
+height = 24
 ;offset-x = 1%
 ;offset-y = 1%
 
@@ -26,15 +26,15 @@ padding-right = 2
 module-margin-left = 2
 module-margin-right = 0
 
-font-0 = "Hack Nerd Font:size=10:weight=bold;2"
+font-0 = "Hack Nerd Font:size=11:weight=bold;2"
 
 modules-left = i3 
 modules-center = date
-modules-right = kb-layout backlight pulseaudio battery
+modules-right = cpu memory backlight pulseaudio battery
 
 tray-position = right
 tray-padding = 2
-tray-background = black
+tray-background = ${colors.black}
 
 wm-restack = i3
 
@@ -89,6 +89,7 @@ label-mode-background = ${colors.foreground}
 ; focused = Active workspace on focused monitor
 label-focused =%index%
 label-focused-background = ${colors.overlay}
+label-focused-foreground = ${colors.accent}
 label-focused-padding = 1
 
 ; unfocused = Inactive workspace on any monitor
@@ -106,6 +107,23 @@ label-urgent = %index%
 label-urgent-background = ${colors.danger}
 label-urgent-foreground = ${colors.base}
 label-urgent-padding = 1
+
+[module/memory]
+type = internal/memory
+
+interval = 3
+warn-percentage = 80
+
+format = MEM:<label>
+
+[module/cpu]
+type = internal/cpu
+
+internal = 1
+
+war-percentage = 80
+
+format = CPU:<label>
 
 
 [module/backlight]
