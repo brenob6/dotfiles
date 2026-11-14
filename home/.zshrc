@@ -4,7 +4,6 @@ export ZSH="$HOME/.oh-my-zsh"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#83a598,italic"
 export ZSH_AUTOSUGGEST_STRATEGY=(history)
 
-export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:/usr/local/bin
 export PATH=$PATH:$IDF_PATH/tools
 
@@ -26,10 +25,8 @@ plugins=(
 
 ## asdf
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-# append completions to fpath
+# append completions to fpath (compinit is run by oh-my-zsh)
 fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
-# initialise completions with ZSH's compinit
-autoload -Uz compinit && compinit
 
 alias vi="nvim"
 alias vimrc="cd ~/.config/nvim"
