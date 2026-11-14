@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# Aplica o layout dos monitores antes de detectar as saídas
-[ -x "$HOME/.screenlayout/screenlayout.sh" ] && "$HOME/.screenlayout/screenlayout.sh"
+# Aplica o perfil do autorandr antes de detectar as saídas
+# (quando chamado pelo hook postswitch, o perfil já foi aplicado)
+if [ -z "$AUTORANDR_CURRENT_PROFILE" ]; then
+    autorandr --change
+fi
 
 # Detecta saídas conectadas (nomes dos monitores)
 monitores=($(xrandr --query | grep " connected" | awk '{ print $1 }'))
