@@ -8,9 +8,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id flameshot
 
-exec_always pkill polybar
 exec_always --no-startup-id $HOME/.script/monitor_setup.sh
-exec_always --no-startup-id $HOME/.screenlayout/screenlayout.sh
 
 floating_modifier $mod
 

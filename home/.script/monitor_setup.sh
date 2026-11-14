@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Aplica o layout dos monitores antes de detectar as saídas
+[ -x "$HOME/.screenlayout/screenlayout.sh" ] && "$HOME/.screenlayout/screenlayout.sh"
+
 # Detecta saídas conectadas (nomes dos monitores)
 monitores=($(xrandr --query | grep " connected" | awk '{ print $1 }'))
 
