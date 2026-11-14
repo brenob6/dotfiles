@@ -51,6 +51,5 @@ bindsym $mod+Shift+r restart
 # Desable Border
 default_border pixel 2
 
-include $HOME/.config/i3/variables.conf
 include $HOME/.config/i3/settings.conf
 include $HOME/.config/i3/keybinds.conf
