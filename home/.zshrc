@@ -1,7 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#83a598,italic"
 export ZSH_AUTOSUGGEST_STRATEGY=(history)
 
 export PATH=$PATH:/usr/local/bin
