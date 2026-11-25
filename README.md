@@ -3,7 +3,7 @@
 ## Dependências
 
 - [GNU Stow](https://www.gnu.org/software/stow/), usado pelo `install.sh`
-- i3, i3status, rofi, dunst, alacritty, tmux, zsh + oh-my-zsh
+- i3, i3status, rofi, dunst, alacritty, tmux, neovim, zsh + oh-my-zsh
 - autorandr, feh, flameshot, brightnessctl, playerctl, network-manager-applet
 
 ## Instalação
