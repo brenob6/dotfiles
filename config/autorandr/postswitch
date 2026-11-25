@@ -1,4 +1,4 @@
 #!/bin/sh
 
-# Reinicia polybar e wallpaper após a troca de perfil
+# Reaplica o wallpaper após a troca de perfil
 exec "$HOME/.script/monitor_setup.sh"

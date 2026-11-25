@@ -48,3 +48,7 @@ default_border pixel 2
 
 include $HOME/.config/i3/settings.conf
 include $HOME/.config/i3/keybinds.conf
+
+bar {
+    status_command i3status
+}
