@@ -1,4 +1,4 @@
 #!/bin/sh
 
-# Reaplica o wallpaper após a troca de perfil
-exec "$HOME/.script/monitor_setup.sh"
+# Uma imagem por monitor, na ordem; imagens extras são ignoradas
+feh --no-fehbg --bg-fill "$HOME/Pictures/wallpapers/wallpaper2" "$HOME/Pictures/wallpapers/wallpaper1"

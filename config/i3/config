@@ -5,7 +5,7 @@ font pango:Hack Regular Nerd Font 8
 exec --no-startup-id nm-applet
 exec --no-startup-id flameshot
 
-exec_always --no-startup-id $HOME/.script/monitor_setup.sh
+exec --no-startup-id autorandr --change --force
 
 floating_modifier $mod
 
