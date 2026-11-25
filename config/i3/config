@@ -2,9 +2,6 @@
 set $mod mod4
 font pango:Hack Regular Nerd Font 8
 
-
-exec --no-startup-id picom
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id flameshot
 
