@@ -3,8 +3,6 @@ export ZSH="$HOME/.oh-my-zsh"
 
 export ZSH_AUTOSUGGEST_STRATEGY=(history)
 
-export PATH=$PATH:/usr/local/bin
-export PATH=$PATH:$IDF_PATH/tools
 
 # besu
 export PATH=$PATH:$HOME/besu-25.6.0/bin
@@ -18,7 +16,6 @@ ZSH_THEME="robbyrussell"
 plugins=(
 	git
 	colored-man-pages
-	git-prompt
 	extract
 )
 
