@@ -6,9 +6,3 @@ export EDITOR="nvim"
 export BROWSER="firefox"
 
 export IDF_PATH="$HOME/esp/esp-idf"
-
-~/.screenlayout/layout.sh &
-
-# Composer
-picom -b -f
-flameshot &

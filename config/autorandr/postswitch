@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Uma imagem por monitor, na ordem; imagens extras são ignoradas
+feh --no-fehbg --bg-fill "$HOME/Pictures/wallpapers/wallpaper2" "$HOME/Pictures/wallpapers/wallpaper1"

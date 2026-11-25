@@ -1,0 +1,3 @@
+# Sobrescreve apenas o que difere de /etc/dunst/dunstrc
+[global]
+    font = Monospace 11

@@ -1,8 +1,16 @@
 # Dotfiles
 
-## Install
+## Dependências
 
-[Stow](https://www.gnu.org/software/stow/) are required to use the `install.sh` script.
+- [GNU Stow](https://www.gnu.org/software/stow/), usado pelo `install.sh`
+- i3, i3status, rofi, dunst, alacritty, tmux, neovim, zsh + oh-my-zsh
+- autorandr, feh, flameshot, brightnessctl, playerctl, network-manager-applet
 
-The script will use `stow` to symlink the configs in `home` and `.config` directory.
-Will also copy some config files in `etc` directory.
+## Instalação
+
+```sh
+./install.sh
+```
+
+O script cria symlinks com `stow` de `config/` em `~/.config` e de `home/` em `~`,
+e copia os arquivos de `etc/` para `/etc` (requer `sudo`).
