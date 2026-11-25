@@ -41,12 +41,4 @@ return {
 			},
 		},
 	},
-  {
-   "lukas-reineke/indent-blankline.nvim",
-    main = "ibl",
-    opts = {
-      indent = { char = "│" }, -- caractere usado para a linha
-      scope = { enabled = true }, -- destaca o escopo atual
-    },
-  }
 }

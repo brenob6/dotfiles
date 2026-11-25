@@ -1,7 +1,6 @@
 return {
   {
     "saghen/blink.cmp",
-    dependencies = "rafamadriz/friendly-snippets",
     version = "*",
     opts = {
       keymap = { preset = "default" },
@@ -14,20 +13,5 @@ return {
       },
     },
     opts_extend = { "sources.default" },
-  },
-  {
-    enabled = false,
-    "zbirenbaum/copilot.lua",
-    config = function()
-      require("copilot").setup({
-        suggestion = {
-          enabled = true,
-          auto_trigger = true,
-        },
-        filetypes = {
-          yaml = true,
-        },
-      })
-    end,
   },
 }

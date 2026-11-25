@@ -8,3 +8,7 @@ vim.opt.shiftwidth = 2
 vim.opt.cursorline = true
 vim.opt.showtabline = 2
 vim.opt.laststatus = 3
+
+-- Guias de indentação sem plugin
+vim.opt.list = true
+vim.opt.listchars = { tab = "  ", leadmultispace = "│ " }
